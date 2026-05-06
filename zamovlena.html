@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Замовлення</title>
+  </head>
+  <body>
+    <div class="page-wrapper">
+    <div class="order-container">
+        <h2>Замовлення</h2>
+        <form>
+            <div class="input-group">
+                <label>Номер телефону</label>
+                <input type="tel" placeholder="380..." required>
+            </div>
+
+            <div class="input-group">
+                <label>Номер карти</label>
+                <input type="text" placeholder="0000 0000 0000 0000" maxlength="16" required>
+            </div>
+
+            <div class="input-group">
+                <label>Адреса доставки</label>
+                <textarea placeholder="Вулиця, будинок, квартира" required></textarea>
+            </div>
+
+            <button type="submit" class="order-button">Замовити піцу</button>
+            <a href="https://dogtop67.github.io/SimbaPizza/#" class="back-link">← Повернутися назад</a>
+        </form>
+    </div>
+</div>
+
+<style>
+    .page-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+        width: 100%;
+        background: linear-gradient(to top, #A2D7B0 20%, #2ECC71 100%);
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .order-container {
+        background: rgba(255, 255, 255, 0.95);
+        padding: 50px; 
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+        max-width: 600px;
+        width: 90%; 
+    }
+
+    h2 {
+        color: #27AE60;
+        text-align: center;
+        margin-bottom: 30px;
+        font-size: 28px;
+    }
+
+    .input-group {
+        margin-bottom: 25px; 
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+        font-weight: bold;
+        color: #333;
+        font-size: 18px;
+    }
+
+    input, textarea {
+        width: 100%;
+        padding: 15px; 
+        border: 2px solid #A2D7B0;
+        border-radius: 10px;
+        box-sizing: border-box;
+        font-size: 16px;
+    }
+
+    textarea {
+        height: 120px; 
+        resize: none;
+    }
+
+    .order-button {
+        background-color: #2ECC71;
+        color: white;
+        border: none;
+        padding: 18px;
+        width: 100%;
+        border-radius: 10px;
+        font-size: 20px; 
+        font-weight: bold;
+        cursor: pointer;
+        transition: 0.3s;
+        margin-top: 10px;
+    }
+
+    .order-button:hover {
+        background-color: #27AE60;
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+
+    .back-link {
+        display: block;
+        text-align: center;
+        margin-top: 20px;
+        color: #888;
+        text-decoration: none;
+        font-size: 16px;
+    }
+</style>
+  </body>
+</html>
