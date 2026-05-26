@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Відгуки - SimbaPizza</title>
+    <style>
+        body {
+                background: linear-gradient(to top, #A2D7B0 20%, #2ECC71 100%);
+            height: 100vh;
+       
+            font-family: Arial, sans-serif;
+            text-align: center;
+            padding: 0;
+            margin: 0;
+        }
+
+        /* Шапка сторінки */
+        header {
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 28px;
+        }
+
+        header p {
+            margin: 10px 0 0 0;
+            font-size: 16px;
+        }
+
+        /* Головний контейнер */
+        .main-content {
+            display: flex; 
+            justify-content: center; 
+            gap: 30px; 
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Ліва колонка з відгуками */
+        .reviews-column {
+            flex: 1.5; 
+            text-align: left;
+        }
+
+        /* Права колонка з формою */
+        .form-column {
+            flex: 1; 
+        }
+
+        /* Картки відгуків — тепер з прямими кутами */
+        .review-block {
+            background-color: white;
+            border: 2px solid #36a73d;
+            margin-bottom: 20px; 
+            padding: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            text-align: left;
+        }
+
+        .author {
+            font-weight: bold;
+            color: #028a02;
+            font-size: 16px;
+        }
+
+        .rating {
+            color: #ffcc00;
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        /* Блок з формою — також без закруглень */
+        .form-block {
+            background-color: #e6f4e6;
+            border: 2px dashed #028a02;
+            padding: 20px;
+            position: sticky; 
+            top: 20px;
+        }
+
+        .form-block h3 {
+            color: #028a02;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        /* Поля вводу без закруглень */
+        input, textarea {
+            width: 95%;
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            font-size: 14px;
+            box-sizing: border-box; 
+        }
+
+        /* Прямокутна кнопка */
+        .btn {
+            background-color: #36a73d;
+            color: white;
+            padding: 12px 25px;
+            border: none;
+            cursor: pointer;
+            font-weight: bold;
+            font-size: 15px;
+            width: 100%; 
+        }
+
+        .btn:hover {
+            background-color: #028a02;
+        }
+
+        /* Посилання назад */
+        .back-link {
+            display: inline-block;
+            margin: 40px 0;
+            color: #028a02;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🍕 Відгуки про SimbaPizza 🍕</h1>
+        <p>Дізнайтеся, що думають наші клієнти, або поділіться своїми враженнями!</p>
+    </header>
+
+    <div class="main-content">
+        
+        <div class="reviews-column">
+            <div class="review-block">
+                <p class="author">👨 Олексій:</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>Замовляв піцу з пепероні, привезли дуже швидко! Тісто тонке, начинки багато. Буду замовляти ще.</p>
+            </div>
+
+            <div class="review-block">
+                <p class="author">👩 Юлія:</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <p>Піца смачна, але хотілося б трохи більше сиру в бортиках. А так все супер, котик Сімба на логотипі топ!</p>
+            </div>
+
+            <div class="review-block">
+                <p class="author">👦 Дмитро:</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>Найкраща піцерія в місті! Дуже смачний білий соус.</p>
+            </div>
+        </div>
+
+        <div class="form-column">
+            <div class="form-block">
+                <h3>Залишити свій відгук:</h3>
+                <form onsubmit="alert('Дякуємо за відгук! Він з\'явиться після перевірки.'); return false;">
+                    <input type="text" placeholder="Ваше ім'я" required><br>
+                    <input type="text" placeholder="Ваша оцінка (від 1 до 5)" required><br>
+                    <textarea placeholder="Ваш відгук..." rows="4" required></textarea><br>
+                    <button type="submit" class="btn">Надіслати відгук</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back-link">← Назад на головну сторінку</a>
+
+</body>
+</html>
