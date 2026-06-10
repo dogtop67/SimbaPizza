@@ -1,135 +1,143 @@
 <!DOCTYPE html>
-<html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Каталог</title>
   <style>
-      body{
-     background: linear-gradient(to top, #A2D7B0 20%, #2ECC71 100%);
-  height: 100vh;
-     padding: 10px;
-     }
-h1{
-  text-align: center;
-  font-size: 50px;
-}
-.purple-button {
-  text-decoration: none;
-  color: #ffffff;
-  padding: 15px 30px;
-  background-color: green;
-  border-radius: 8px;
-  transition: all 0.4s;
-  display: inline-block;
-}
-.purple-button:hover{
-  background-color: #36a73d;
-}
-div1{
-  position: absolute;
-  top:10px;
-  left:10px;
-}
-.tea{
-    color:white;
-    background-color:green;
-    padding:20px 25px 20px 25px;
-    text-decoration: none
-}
-Div3{
-  font-size: 27px;
-  position: absolute;
-  top: 570px;
-  left:260px;
-}
-div4{
-  position: absolute;
-  top: 130px;
-  Left: 460px;
-}
-Div5{
-  position: absolute;
-  top: 530px;
-  left: 460px;
-}
-Div6{
-  position: absolute;
-  top: 580px;
-  left: 460px;
-}
-div7{
-  font-size: 27px;
-  position: absolute;
-  top: 570px;
-  left:700px;
-}
-div8{
-  position: absolute;
-  top: 130px;
-  Left: 895px;
-}
-Div9{
-  position: absolute;
-  top: 530px;
-  left: 900px;
-}
-div10{
-   font-size: 27px;
-  position: absolute;
-  top: 570px;
-  left: 1140px;
-}
-Div11{
-  position: absolute;
-  top: 130px;
-  Left: 1335px;
-}
-div12{
-  position: absolute;
-  top: 530px;
-  left: 1345px;
-} 
-div13{
-    font-size: 27px;
-  position: absolute;
-  top: 570px;
-  left: 1575px;
-}
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(to top, #A2D7B0 20%, #2ECC71 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    header {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 0;
+    }
+    .back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 15px 30px;
+      background-color: green;
+      border-radius: 8px;
+      transition: all 0.4s;
+      display: inline-block;
+    }
+    .back-button:hover {
+      background-color: #36a73d;
+    }
+    .pizza-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+      gap: 30px; 
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+    .pizza-card {
+      padding: 15px;
+      width: 430px; 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+    .pizza-card img {
+      width: 100%; 
+      height: auto;
+      display: block;
+      background-color: white; 
+    }
+    .pizza-info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; 
+      margin-top: 15px;
+    }
+    .pizza-text h2 {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+    .order-button {
+      color: white;
+      background-color: green;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 27px;
+      transition: background-color 0.3s;
+    }
+    .order-button:hover {
+      background-color: #36a73d;
+    }
+    @media (max-width: 480px) {
+      .pizza-card {
+        width: 100%; 
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 60px; 
+      }
+    }
   </style>
-  <head>
-    <title>Каталог</title>
-  </head>
-  <body>
-    <header>
-     <h1>Каталог</h1>
-     <div1> <a href="https://dogtop67.github.io/SimbaPizza/#" class="purple-button">←</a> </div1>
-    </header>
-   <main>
-    <div2>
-      <img src = "https://caponepizza.kiev.ua/wp-content/uploads/2023/03/img_2308.jpeg" width="400" >
-      <h2>Піца 4 сира</h2>
-      <h2>130 грн</h2>
-      <div3>  <a href="zamovlena.html" class="tea">Замовити</a>  </div3>
-    </div2>
-    <div4>
-      <img src = "https://cipollino.ua/content/uploads/images/pytstsa-tsezar-svezhest-khrustiashchest-y-sytost-cipollino.jpg" width="400" >
-    </div4>
-<div5>
-  <h2>Піца цезар</h2>
-</div5>
-<div6>
-  <h2>150 грн</h2>
-</div6>
-  <div7>  <a href="zamovlena.html" class="tea">Замовити</a>  </div7>
-  <div8> <img src = "https://uzetut.com/image/cache/catalog/picasaljami-500x500.jpg" width="400"> </div8>
-<div9>
-  <h2>Піца салямі</h2>
-  <h2>140 грн</h2>
-</div9>
-<div10>  <a href="zamovlena.html" class="tea">Замовити</a>  </div10>
-<div11> <img src = "https://ecopizza.com.ua/570-large_default/pica-gavajska.jpg" width="400"> </div11>
-<div12>
-   <h2>Гавайська Піца</h2>
-   <h2>120грн</h2>
-</div12>
-<div13>  <a href="zamovlena.html" class="tea">Замовити</a>  </div13>
-   </main>
-  </body>
+</head>
+<body>
+  <header>
+    <a href="https://dogtop67.github.io/SimbaPizza/#" class="back-button">←</a>
+    <h1>Каталог</h1>
+  </header>
+  <main class="pizza-container">
+    <div class="pizza-card">
+      <img src="https://caponepizza.kiev.ua/wp-content/uploads/2023/03/img_2308.jpeg" alt="Піца 4 сира">
+      <div class="pizza-info">
+        <div class="pizza-text">
+          <h2>Піца 4 сира</h2>
+          <h2>130 грн</h2>
+        </div>
+        <a href="zamovlena.html" class="order-button">Замовити</a>
+      </div>
+    </div>
+    <div class="pizza-card">
+      <img src="https://cipollino.ua/content/uploads/images/pytstsa-tsezar-svezhest-khrustiashchest-y-sytost-cipollino.jpg" alt="Піца цезар">
+      <div class="pizza-info">
+        <div class="pizza-text">
+          <h2>Піца цезар</h2>
+          <h2>150 грн</h2>
+        </div>
+        <a href="zamovlena.html" class="order-button">Замовити</a>
+      </div>
+    </div>
+    <div class="pizza-card">
+      <img src="https://uzetut.com/image/cache/catalog/picasaljami-500x500.jpg" alt="Піца салямі">
+      <div class="pizza-info">
+        <div class="pizza-text">
+          <h2>Піца салямі</h2>
+          <h2>140 грн</h2>
+        </div>
+        <a href="zamovlena.html" class="order-button">Замовити</a>
+      </div>
+    </div>
+    <div class="pizza-card">
+      <img src="https://ecopizza.com.ua/570-large_default/pica-gavajska.jpg" alt="Гавайська Піца">
+      <div class="pizza-info">
+        <div class="pizza-text">
+          <h2>Гавайська Піца</h2>
+          <h2>120 грн</h2>
+        </div>
+        <a href="zamovlena.html" class="order-button">Замовити</a>
+      </div>
+    </div>
+  </main>
+</body>
 </html>
