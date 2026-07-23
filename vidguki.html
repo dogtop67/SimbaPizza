@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Відгуки</title>
+      <link rel="stylesheet" href="style_vidguki.css">
+</head>
+<body>
+
+    <header>
+        <h1>Відгуки про SimbaPizza</h1>
+        <p>Дізнайтеся, що думають наші клієнти, або поділіться своїми враженнями!</p>
+    </header>
+
+    <div class="main-content">
+        
+        <div class="reviews-column">
+            <div class="review-block">
+                <p class="author">👨 Олексій:</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>Замовляв піцу з пепероні, привезли дуже швидко! Тісто тонке, начинки багато. Буду замовляти ще.</p>
+            </div>
+
+            <div class="review-block">
+                <p class="author">👩 Юлія:</p>
+                <div class="rating">⭐⭐⭐⭐</div>
+                <p>Піца смачна, але хотілося б трохи більше сиру в бортиках. А так все супер !</p>
+            </div>
+
+            <div class="review-block">
+                <p class="author">👦 Дмитро:</p>
+                <div class="rating">⭐⭐⭐⭐⭐</div>
+                <p>Найкраща піцерія в місті! Дуже смачний білий соус.</p>
+            </div>
+        </div>
+
+        <div class="form-column">
+            <div class="form-block">
+                <h3>Залишити свій відгук:</h3>
+                <form onsubmit="alert('Дякуємо за відгук! Він з\'явиться після перевірки.'); return false;">
+                    <input type="text" placeholder="Ваше ім'я" required><br>
+                    <input type="text" placeholder="Ваша оцінка (від 1 до 5)" required><br>
+                    <textarea placeholder="Ваш відгук..." rows="4" required></textarea><br>
+                    <button type="submit" class="btn">Надіслати відгук</button>
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <a href="index.html" class="back-link">← Назад на головну сторінку</a>
+
+</body>
+</html>

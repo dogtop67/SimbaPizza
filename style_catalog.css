@@ -1,0 +1,85 @@
+ * {
+      box-sizing: border-box;
+    }
+    body {
+      background: linear-gradient(to top, #A2D7B0 20%, #2ECC71 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 20px;
+      font-family: sans-serif;
+    }
+    header {
+      position: relative;
+      margin-bottom: 40px;
+    }
+    h1 {
+      text-align: center;
+      font-size: 50px;
+      margin: 0;
+    }
+    .back-button {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      text-decoration: none;
+      color: #ffffff;
+      padding: 15px 30px;
+      background-color: green;
+      border-radius: 8px;
+      transition: all 0.4s;
+      display: inline-block;
+    }
+    .back-button:hover {
+      background-color: #36a73d;
+    }
+    .pizza-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; 
+      gap: 30px; 
+      max-width: 1800px;
+      margin: 0 auto;
+    }
+    .pizza-card {
+      padding: 15px;
+      width: 430px; 
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start; 
+    }
+    .pizza-card img {
+      width: 100%; 
+      height: auto;
+      display: block;
+      background-color: white; 
+    }
+    .pizza-info {
+      width: 100%;
+      display: flex;
+      justify-content: space-between; 
+      margin-top: 15px;
+    }
+    .pizza-text h2 {
+      font-size: 24px;
+      margin: 5px 0;
+    }
+    .order-button {
+      color: white;
+      background-color: green;
+      padding: 15px 25px;
+      text-decoration: none;
+      font-size: 27px;
+      transition: background-color 0.3s;
+    }
+    .order-button:hover {
+      background-color: #36a73d;
+    }
+    @media (max-width: 480px) {
+      .pizza-card {
+        width: 100%; 
+      }
+      h1 {
+        font-size: 36px;
+        margin-top: 60px; 
+      }
+    }

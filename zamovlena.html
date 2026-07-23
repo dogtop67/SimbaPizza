@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <title>Замовлення</title>
+    <link rel="stylesheet" href="style_zamovlena.css">
+  </head>
+  <body>
+    <div class="page-wrapper">
+    <div class="order-container">
+        <h2>Замовлення</h2>
+        <form>
+            <div class="input-group">
+                <label>Номер телефону</label>
+                <input type="tel" placeholder="380..." required>
+            </div>
+
+            <div class="input-group">
+                <label>Номер карти</label>
+                <input type="text" placeholder="0000 0000 0000 0000" maxlength="16" required>
+            </div>
+
+            <div class="input-group">
+                <label>Адреса доставки</label>
+                <textarea placeholder="Вулиця, будинок, квартира" required></textarea>
+            </div>
+
+            <button type="submit" class="order-button">Замовити піцу</button>
+            <a href="index.html" class="back-link">← Повернутися назад</a>
+        </form>
+    </div>
+</div>
+
+  </body>
+</html>
